@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+  }
+*:focus{
+  outline: none;
+}
+body{
+  background: black;
+  font-family: sans-serif;
+  /* display:flex;
+  justify-content: center; */
+  
+}
+canvas{
+  z-index:2;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+.controls{
+  position: fixed;
+  bottom: 2rem;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+}
+.ctrl-btn, .ctrl-btn--left, .ctrl-btn--right{
+  z-index:1;
+  padding:1rem;
+  width: 30%;
+  height: 100%;
+  opacity: 0.4;
+  border:none;
+  position: fixed;
+}
+.ctrl-btn--left{
+left:0;
+}
+.ctrl-btn--right{
+right:0;
+}
+.menu-container, .menu-gameover{
+  z-index:200;
+  text-align: center;
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  width: 50%;
+  height: 50%;
+}
+.menu__title{
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.menu{
+  margin-top: 1rem;
+  padding: 1rem;
+  list-style: none;
+  text-align: center;
+}
+.menu__el{
+  background: black;
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: white;
+  border: 2px solid white;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.score{
+  z-index: 1000;
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  color:white;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.invisible{
+  display:none;
+}
+
+@media (max-width: 500px){
+  .ctrl-btn, .ctrl-btn--left, .ctrl-btn--right{
+    width: 50%;
+    height: 30%;
+    bottom: 0;
+  }
+}
