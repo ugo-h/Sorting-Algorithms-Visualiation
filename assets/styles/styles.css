@@ -94,6 +94,7 @@ body{
 }
 .projects__cards{
     margin-left: 5rem;
+    max-width: 1000px;
 }
 
 .section__title {
@@ -220,8 +221,22 @@ footer{
     top:0rem;
     transform: translate(0, -84%);
 }
-
-@media(max-width: 700px) {
+@media(max-width: 1100px) {
+    .curve{
+        top: 3rem;
+        width: 55vw;
+    }
+    .section__title{
+        align-self: flex-start;
+        margin-left: 3rem;
+    }
+    .projects{
+        border-top-left-radius:1px;
+        border-top-right-radius:1px;
+        
+    }
+}
+@media(max-width: 780px) {
     .hero{
         height: 80vh;
     }
@@ -250,6 +265,13 @@ footer{
     .skills__list__el img{
         width: 2rem;
     }
+    .projects__cards{
+        margin-left: 0;
+    }
+    .card-list{
+        align-items: center;
+        flex-flow: column nowrap;
+    }
     .card{
         
         border: none;
@@ -258,7 +280,7 @@ footer{
         flex-direction: column-reverse;
         align-items: flex-start;
         padding:1rem;
-        width: 80%;
+        width: 90%;
         margin:1rem auto;
         height: auto;
     }
@@ -284,6 +306,8 @@ footer{
         border-top-right-radius: 20px;
     }
     .curve{
+        width: 50vw;
+        top:0;
         bottom: -4rem;
     }
 }
