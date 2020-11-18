@@ -3,15 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ugo-h</title>
+    <title>Ivan Thomson - Portfolio</title>
+    <link rel="stylesheet" href="./assets//styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Ugo-h demos:</h1>
-    <ul>
-        <li><a href="/SortAlgorithmVisualizer/">Sorting Algorithm Visualizer</a></li>
-        <li><a href="/Metronome/">Metronome</a></li>
-        <li><a href="/Pong/">Pong</a></li>
-        <li><a href="/Todo-app/">Todo-app</a></li>
-    </ul>
+    <header class="header">
+        <nav class="header__nav nav">
+            <a class="nav__item" href="">Work</a>
+            <a class="nav__item" href="">About</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="hero__container">
+            <h1 class="hero__title">Looking for a Frontend web developer? </h1>
+            <h2 class="hero__subtitle">
+
+                 <!-- Hi! My name is Ivan and I am a frontend web developer from Saint-Petersburg, Russia. Here you can learn about my skills and see projects that I've worked on. -->
+            </h2>
+        </div>
+        <div class="hero__scroll-pointer">
+            <p>Learn more about my work</p>
+            <img class="hero__arrow-img" src="./assets/svg/arrow-down.svg" alt="arrow-to-the-bottom">
+        </div>
+    </div>
+    
+    <div class="section skills">
+        <h2>My skillset:</h2>
+        <ul class="skills__list">
+            <li class="skills__list__el">
+                <img src="https://www.svgrepo.com/show/220427/html.svg" alt="html"> HTML 5
+            </li>
+            <li class="skills__list__el">
+                <img src="https://www.svgrepo.com/show/130953/css.svg" alt="css"> CSS 3
+            </li>
+            <li class="skills__list__el">
+                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/es6/es6.png" alt="js"> JavaScript es6
+            </li>
+            <li class="skills__list__el">
+                <img src="https://www.svgrepo.com/show/303157/react-logo.svg" alt="react"> React.js
+            </li>
+            <li class="skills__list__el">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" alt="git"> Git
+            </li>
+            <li class="skills__list__el">
+                <img src="https://www.svgrepo.com/show/303360/nodejs-logo.svg" alt="nodejs"> Node.js
+            </li>
+            <li class="skills__list__el">
+                <img src="https://raw.githubusercontent.com/webpack/media/master/logo/icon-square-big.png" alt="webpack"> Webpack
+            </li>
+            
+            
+        </ul>
+    </div>
+
+    <div class="section projects">
+        <img class="curve" src="assets/svg/curve.svg">  
+
+        <h2 class="section__title">Here are some of my projects:</h2>
+        <ul class="card-list projects__cards">
+            <li class="card">
+                <a class="card__img-link" href="https://ugo-h.github.io/sorting-visualization-app/"><img class="card__img" src="assets/img/projectPreviews/SortingAlgorithmVisualizer.PNG"/></a>
+                <div class="card__content">
+                    <h2>Sorting Algorithms Visualizer</h2> 
+                    <a class="card__learn-more-link" href="https://github.com/ugo-h/sorting-visualization-app#sorting-visualization-app"><img class="github-icon" src="./assets/svg/github.svg"/>See Source Code</a>
+                </div>
+            </li>
+            <li class="card">
+                <a class="card__img-link" href="https://ugo-h.github.io/Todo-app/"><img class="card__img" src="assets/img/projectPreviews/MyNotes1.PNG"/></a>
+                <div class="card__content">
+                    <h2>ToDo App</h2> 
+                    <a class="card__learn-more-link" href=""><img class="github-icon" src="./assets/svg/github.svg"/>See Source Code</a>
+                </div>
+            </li>
+            <li class="card">
+                <a class="card__img-link" href="https://ugo-h.github.io/Pong/"><img class="card__img" src="assets/img/projectPreviews/pong__pic.PNG"/></a>
+                <div class="card__content">
+                    <h2>Pong</h2> 
+                    <a class="card__learn-more-link" href="https://github.com/ugo-h/Pong"><img class="github-icon" src="./assets/svg/github.svg"/>See Source Code</a>
+                </div>
+            </li>
+            <li class="card">
+                <a class="card__img-link" href="https://kinopoisk-movie-picker.herokuapp.com/"><img class="card__img" src="assets/img/projectPreviews/movie__pic.PNG"/></a>
+                <div class="card__content">
+                    <h2>kinopoisk random movie picker</h2> 
+                    <a class="card__learn-more-link" href="https://github.com/ugo-h/sorting-visualization-app#sorting-visualization-app"><img class="github-icon" src="./assets/svg/github.svg"/>See Source Code</a>
+                </div>
+            </li>
+            <li class="card">
+                <a class="card__img-link" href="https://ugo-h.github.io/Metronome/"><img class="card__img" src="assets/img//projectPreviews/metronome.PNG"/></a>
+                <div class="card__content">
+                    <h2>Metronome</h2> 
+                    <a class="card__learn-more-link" href=""><img class="github-icon" src="./assets/svg/github.svg"/>See Source Code</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <nav class="footer__nav">
+            <a href="https://github.com/ugo-h"><img class="github-icon--lg" src="./assets/svg/github.svg"/></a>
+
+        </nav>
+    </footer>
 </body>
 </html>
